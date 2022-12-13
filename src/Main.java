@@ -12,7 +12,7 @@ public class Main {
         String result = null;
 
         if (parts.length != 3) {
-            throw new RuntimeException("формат математической операции не удовлетворяет заданию - два операнда и один оператор (+, -, /, *)");
+            throw new RuntimeException("С„РѕСЂРјР°С‚ РјР°С‚РµРјР°С‚РёС‡РµСЃРєРѕР№ РѕРїРµСЂР°С†РёРё РЅРµ СѓРґРѕРІР»РµС‚РІРѕСЂСЏРµС‚ Р·Р°РґР°РЅРёСЋ - РґРІР° РѕРїРµСЂР°РЅРґР° Рё РѕРґРёРЅ РѕРїРµСЂР°С‚РѕСЂ (+, -, /, *)");
         }
 
         if (cr.isRoman(parts[0]) && cr.isRoman(parts[2])) {
@@ -28,7 +28,7 @@ public class Main {
         }
 
         if (result == null) {
-            throw new NumberFormatException("Неверный ввод чисел");
+            throw new NumberFormatException("РќРµРІРµСЂРЅС‹Р№ РІРІРѕРґ С‡РёСЃРµР»");
         }
         return result;
     }
@@ -40,7 +40,7 @@ public class Main {
         String result;
 
         while (true) {
-            System.out.println("Введите операцию: или end чтобы завершить работу");
+            System.out.println("Р’РІРµРґРёС‚Рµ РѕРїРµСЂР°С†РёСЋ: РёР»Рё end С‡С‚РѕР±С‹ Р·Р°РІРµСЂС€РёС‚СЊ СЂР°Р±РѕС‚Сѓ");
             input = scanner.nextLine();
 
             if (input.equalsIgnoreCase("end")) break;

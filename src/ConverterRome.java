@@ -19,7 +19,7 @@ class ConverterRome {
 
     public String convertToRome(int number) {
         if (number > 100 || number < 1) {
-            throw new NumberFormatException("Äàííîå ÷èñëî íå ïğåäóñìîòğåíî äëÿ ïåğåâîäà â ğèìñêèå ÷èñëà");
+            throw new NumberFormatException("Ğ”Ğ°Ğ½Ğ½Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾ Ğ½Ğµ Ğ¿Ñ€ĞµĞ´ÑƒÑĞ¼Ğ¾Ñ‚Ñ€ĞµĞ½Ğ¾ Ğ´Ğ»Ñ Ğ¿ĞµÑ€ĞµĞ²Ğ¾Ğ´Ğ° Ğ² Ñ€Ğ¸Ğ¼ÑĞºĞ¸Ğµ Ñ‡Ğ¸ÑĞ»Ğ°");
         }
 
         StringBuilder sb = new StringBuilder();
@@ -42,7 +42,7 @@ class ConverterRome {
             int testInt = convertFromRome(input);
 
             if (testInt == 0) {
-                throw new NumberFormatException("Íåâåğíûé ââîä äàííûõ");
+                throw new NumberFormatException("ĞĞµĞ²ĞµÑ€Ğ½Ñ‹Ğ¹ Ğ²Ğ²Ğ¾Ğ´ Ğ´Ğ°Ğ½Ğ½Ñ‹Ñ…");
             }
 
             String test2 = convertToRome(testInt);

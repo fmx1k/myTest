@@ -3,7 +3,7 @@ class Calculator {
     public int calculate(int a, int b, String operand) {
 
         if (a < 1 || a > 10 || b < 1 || b > 10) {
-            throw new NumberFormatException("Можно вводить только числа от 1 до 10 включительно");
+            throw new NumberFormatException("РњРѕР¶РЅРѕ РІРІРѕРґРёС‚СЊ С‚РѕР»СЊРєРѕ С‡РёСЃР»Р° РѕС‚ 1 РґРѕ 10 РІРєР»СЋС‡РёС‚РµР»СЊРЅРѕ");
         }
 
         int result;
@@ -26,7 +26,7 @@ class Calculator {
                 break;
 
             default:
-                throw new IllegalStateException("Данная арифметическая операция не поддерживается, можно ввести только +,-,*,/, " + "а вы ввели " + operand);
+                throw new IllegalStateException("Р”Р°РЅРЅР°СЏ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєР°СЏ РѕРїРµСЂР°С†РёСЏ РЅРµ РїРѕРґРґРµСЂР¶РёРІР°РµС‚СЃСЏ, РјРѕР¶РЅРѕ РІРІРµСЃС‚Рё С‚РѕР»СЊРєРѕ +,-,*,/, " + "Р° РІС‹ РІРІРµР»Рё " + operand);
         }
         return result;
     }
